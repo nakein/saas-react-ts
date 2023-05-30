@@ -31,7 +31,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
     <section id="benefits" className="py-10">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
-        className="mx-auto w-5/6 justify-between py-20 md:flex"
+        className="mx-auto w-5/6 justify-between pt-20 md:flex"
       >
         <div className="md:w-2/5">
           <div className="mb-10">
@@ -44,7 +44,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             ))}
           </ul>
         </div>
-        <div>
+        <div className="md:w-3/6">
           <img alt="benefits" src={BenefitGraphic} />
         </div>
       </motion.div>

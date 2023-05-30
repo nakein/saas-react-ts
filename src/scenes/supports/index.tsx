@@ -38,7 +38,7 @@ const container = {
 
 const Supports = () => {
   return (
-    <section className="mx-auto w-full bg-gray-20 py-20">
+    <section className="mx-auto w-full bg-gray-20 pt-20">
       <div className="mx-auto w-5/6">
         <div className="flex flex-col gap-8 md:flex-row">
           <div className="basis-7/12">

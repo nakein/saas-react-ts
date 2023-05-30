@@ -18,7 +18,7 @@ const Support = ({ icon, title, description }: Props) => {
         <div className="p-3 shadow-md">{icon}</div>
       </div>
       <div>
-        <h1 className="text-3xl font-bold text-black">{title}</h1>
+        <h1 className="text-2xl font-bold text-black">{title}</h1>
         <p className="my-2">{description}</p>
       </div>
     </motion.div>

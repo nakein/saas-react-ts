@@ -6,7 +6,7 @@ type Props = {
 
 const HText = ({ children }: Props) => {
   return (
-    <h1 className="basis-3/5 text-6xl font-semibold text-black">{children}</h1>
+    <h1 className="basis-3/5 text-5xl font-semibold text-black">{children}</h1>
   );
 };
 

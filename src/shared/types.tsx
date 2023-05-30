@@ -31,3 +31,8 @@ export interface PriceType {
   buttonText: string;
   isFeatured: boolean;
 }
+
+export interface QuoteType {
+  author: string;
+  text: string;
+}

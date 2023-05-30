@@ -1,3 +1,4 @@
+import useMediaQuery from "@/hooks/useMediaQuery";
 import Benefit from "@/shared/Benefit";
 import { BenefitType } from "@/shared/types";
 
@@ -22,13 +23,15 @@ const Price = ({
   buttonText,
   isFeatured,
 }: Props) => {
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+
   return (
     <div
-      className={`rounded-lg p-5 shadow-md md:my-20 md:w-4/12 ${
+      className={`rounded-lg p-5 text-center shadow-md md:my-20 md:w-4/12 ${
         isFeatured ? "bg-primary-500 text-white md:scale-110" : "bg-white"
       } `}
     >
-      {isFeatured && (
+      {isFeatured && isAboveMediumScreens && (
         <div className="absolute bottom-0 right-0 z-[-1] h-3/4 w-full rounded-t-full bg-primary-200"></div>
       )}
       <div>
@@ -77,9 +80,11 @@ const Price = ({
           </button>
         )}
         <div className="mb-5 rounded-lg bg-gray-20 p-5">
-          {benefits.map((benefit: BenefitType) => (
-            <Benefit title={benefit.title} key={benefit.title} />
-          ))}
+          <div className="text-start">
+            {benefits.map((benefit: BenefitType) => (
+              <Benefit title={benefit.title} key={benefit.title} />
+            ))}
+          </div>
           {isFeatured ? (
             <button className="mt-5 w-4/5 rounded-lg bg-primary-500 p-4 text-white drop-shadow-xl">
               {buttonText}

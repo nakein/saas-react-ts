@@ -37,7 +37,7 @@ const Features = ({ setSelectedPage }: Props) => {
     <section id="features" className="py-10">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Features)}
-        className="mx-auto w-5/6 py-20"
+        className="mx-auto w-5/6 pt-20"
       >
         <div className="mb-20 flex flex-col gap-8 md:flex-row md:items-center md:text-center">
           <div className="w-full text-start md:w-2/6">

@@ -65,18 +65,19 @@ const Pricing = ({ setSelectedPage }: Props) => {
       <div className="absolute right-0 z-[-1] h-[500px] w-[500px] rounded-full bg-primary-500 blur-[400px]"></div>
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Pricing)}
-        className="mx-auto w-5/6 py-10 md:flex"
+        className="mx-auto w-5/6 pt-20 md:flex"
       >
-        <div className="mx-auto flex flex-col items-center gap-8 text-center">
-          <HText>
-            Choose The Plan <br /> That's Right For You
-          </HText>
-          <p className="font-bold">
-            Choose the plan that works best for you, feel free to contact us
-          </p>
-          <Switch isYearly={yearly} handleToggle={() => setYearly(!yearly)} />
-
-          <div className="flex flex-col gap-8 md:flex-row">
+        <div className="mx-auto items-center gap-8">
+          <div className="basis 3/5 flex flex-col items-center gap-8 text-center">
+            <HText>
+              Choose The Plan <br /> That's Right For You
+            </HText>
+            <p className="font-bold">
+              Choose the plan that works best for you, feel free to contact us
+            </p>
+            <Switch isYearly={yearly} handleToggle={() => setYearly(!yearly)} />
+          </div>
+          <div className="flex flex-col gap-12 md:flex-row">
             {prices.map((price: PriceType) => (
               <Price
                 key={price.title}
