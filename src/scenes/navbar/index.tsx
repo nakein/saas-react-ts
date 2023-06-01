@@ -25,7 +25,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/* LEFT SIDE */}
-            <img alt="logo" src={Logo} />
+            <img alt="logo" src={Logo} width="155" height="40" />
 
             {/* RIGHT SIDE */}
             {isAboveMediumScreens ? (
@@ -68,6 +68,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             ) : (
               <button
                 className="rounded-full bg-primary-300 p-2"
+                aria-label="Open mobile menu"
                 onClick={() => setIsMenuToggled(!isMenuToggled)}
               >
                 <Bars3Icon className="h-6 w-6 text-white" />
@@ -82,7 +83,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <div className="fixed bottom-0 right-0 z-40 h-full w-[300px] bg-white drop-shadow-xl">
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
-            <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+            <button
+              aria-label="Close mobile menu"
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+            >
               <XMarkIcon className="h-6 w-6 text-gray-400" />
             </button>
           </div>

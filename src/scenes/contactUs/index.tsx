@@ -54,13 +54,21 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             Everything you need to accept to payment and grow your money of
             manage anywhere on planet
           </p>
-          <img alt="quote" src={Quote} className="mb-10" />
+          <img
+            alt="quote"
+            src={Quote}
+            className="mb-10"
+            width="45"
+            height="38"
+          />
           <p className="mb-10 w-4/5">{activeQuote.text}</p>
           <p className="mb-10">{activeQuote.author}</p>
           <div className="mb-5 flex flex-wrap gap-5">
             <img
               alt="Person1"
               src={Person1}
+              width="66"
+              height="66"
               onClick={() => handleClick(0)}
               className={`cursor-pointer ${
                 position === 0
@@ -71,6 +79,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             <img
               alt="Person2"
               src={Person2}
+              width="66"
+              height="66"
               onClick={() => handleClick(1)}
               className={`cursor-pointer ${
                 position === 1
@@ -81,6 +91,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             <img
               alt="Person3"
               src={Person3}
+              width="66"
+              height="66"
               onClick={() => handleClick(2)}
               className={`cursor-pointer ${
                 position === 2
@@ -91,6 +103,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             <img
               alt="Person4"
               src={Person4}
+              width="66"
+              height="66"
               onClick={() => handleClick(3)}
               className={`cursor-pointer ${
                 position === 3
@@ -101,6 +115,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             <img
               alt="Next button"
               src={NextButton}
+              width="66"
+              height="66"
               onClick={() => handleClick(4)}
               className="cursor-pointer"
             />
@@ -108,7 +124,13 @@ const ContactUs = ({ setSelectedPage }: Props) => {
         </div>
         <div className="md:basis-2/4">
           <div className="mx-auto rounded-lg bg-secondary-500 p-5 md:p-10">
-            <img className="mx-auto mb-5" alt="Money" src={Money} />
+            <img
+              className="mx-auto mb-5"
+              alt="Money"
+              src={Money}
+              width="73"
+              height="86"
+            />
             <h2 className="mb-5 text-center text-3xl text-white">
               Get Started
             </h2>

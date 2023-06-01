@@ -50,14 +50,14 @@ const Supports = () => {
             </p>
             <div className="flex gap-12">
               <div>
-                <img alt="5 Stars" src={Stars5} />
+                <img alt="5 Stars" src={Stars5} width="142" height="26" />
                 <p className="mt-3 text-gray-100">
                   <b>4.9</b> / 5 rating
                 </p>
                 <p className="mt-3 font-bold">databriks</p>
               </div>
               <div>
-                <img alt="4 Stars" src={Stars4} />
+                <img alt="4 Stars" src={Stars4} width="142" height="26" />
                 <p className="mt-3 text-gray-100">
                   <b>4.1</b> / 5 rating
                 </p>

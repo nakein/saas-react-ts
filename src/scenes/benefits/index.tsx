@@ -45,7 +45,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           </ul>
         </div>
         <div className="md:w-3/6">
-          <img alt="benefits" src={BenefitGraphic} />
+          <img alt="benefits" src={BenefitGraphic} width="661" height="556" />
         </div>
       </motion.div>
     </section>

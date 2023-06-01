@@ -81,9 +81,11 @@ const Price = ({
         )}
         <div className="mb-5 rounded-lg bg-gray-20 p-5">
           <div className="text-start">
-            {benefits.map((benefit: BenefitType) => (
-              <Benefit title={benefit.title} key={benefit.title} />
-            ))}
+            <ul>
+              {benefits.map((benefit: BenefitType) => (
+                <Benefit title={benefit.title} key={benefit.title} />
+              ))}
+            </ul>
           </div>
           {isFeatured ? (
             <button className="mt-5 w-4/5 rounded-lg bg-primary-500 p-4 text-white drop-shadow-xl">

@@ -9,19 +9,19 @@ import ActionButton from "@/shared/ActionButton";
 
 const features: Array<FeatureType> = [
   {
-    image: <img alt="Feature1" src={Features1} />,
+    image: <img alt="Feature1" src={Features1} width="364" height="430" />,
     title: "Collaboration Teams",
     description:
       "Here you can handle projects together with your team virtually",
   },
   {
-    image: <img alt="Feature2" src={Features2} />,
+    image: <img alt="Feature2" src={Features2} width="364" height="430" />,
     title: "Cloud Storage",
     description:
       "No need to worry about storage because we provide storage up to 2 TB",
   },
   {
-    image: <img alt="Feature3" src={Features3} />,
+    image: <img alt="Feature3" src={Features3} width="364" height="430" />,
     title: "Daily Analytics",
     description:
       "We always provide useful information to make it easier for you every day",

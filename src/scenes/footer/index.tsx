@@ -6,11 +6,11 @@ const Footer = () => {
     <footer className="bg-secondary-400 py-5">
       <div className="justify-content mx-auto mb-10 w-5/6 gap-16 md:flex">
         <div className="md:basis-11/12">
-          <img alt="logo" src={Logo} className="mb-5" />
+          <img alt="logo" src={Logo} className="mb-5" width="155" height="40" />
           <p className="mb-5">Get started now, try our product</p>
           <label className="relative block md:w-3/5">
             <span className="absolute inset-y-0 right-0 flex items-center">
-              <button>
+              <button aria-label="Email sent">
                 <ArrowRightCircleIcon className="h-16 w-16 fill-primary-300"></ArrowRightCircleIcon>
               </button>
             </span>

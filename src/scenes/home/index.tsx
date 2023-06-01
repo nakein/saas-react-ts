@@ -76,7 +76,12 @@ const Home = ({ setSelectedPage }: Props) => {
 
         {/* IMAGE */}
         <div className="mt-20 flex basis-5/6 justify-center md:h-fit md:justify-items-end md:self-center">
-          <img alt="home-page-graphic" src={HomePageGraphic} />
+          <img
+            alt="home-page-graphic"
+            src={HomePageGraphic}
+            width="702"
+            height="559"
+          />
         </div>
       </motion.div>
 
@@ -90,11 +95,36 @@ const Home = ({ setSelectedPage }: Props) => {
           <div className="mt-10 h-[150px] w-full py-5">
             <div className="mx-auto w-5/6">
               <div className="flex w-3/5 items-center justify-between gap-14">
-                <img alt="unsplash-sponsor" src={SponsorUnsplash} />
-                <img alt="notion-sponsor" src={SponsorNotion} />
-                <img alt="intercom-sponsor" src={SponsorIntercom} />
-                <img alt="descript-sponsor" src={SponsorDescript} />
-                <img alt="grammarly-sponsor" src={SponsorGrammarly} />
+                <img
+                  alt="unsplash-sponsor"
+                  src={SponsorUnsplash}
+                  width="180"
+                  height="38"
+                />
+                <img
+                  alt="notion-sponsor"
+                  src={SponsorNotion}
+                  width="145"
+                  height="36"
+                />
+                <img
+                  alt="intercom-sponsor"
+                  src={SponsorIntercom}
+                  width="201"
+                  height="36"
+                />
+                <img
+                  alt="descript-sponsor"
+                  src={SponsorDescript}
+                  width="196"
+                  height="36"
+                />
+                <img
+                  alt="grammarly-sponsor"
+                  src={SponsorGrammarly}
+                  width="154"
+                  height="36"
+                />
               </div>
             </div>
           </div>
